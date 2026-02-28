@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Bernas — VibeCheck</title>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        .profile-avatar { background: linear-gradient(135deg, #ef4444, #f87171); }
+        .member-quote { border-left-color: #ef4444; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Vibe<span>Check</span><span class="logo-dot"></span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#team">The Crew</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html#team" class="back-link">Back to Crew</a>
+        
+        <div class="member-profile">
+            <div class="profile-header">
+                <div class="profile-avatar">PB</div>
+                <h1 class="profile-name">Princess Bernas</h1>
+                <p class="profile-intro">Finds joy, relaxation, and precious memories through watching</p>
+            </div>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="bernas.jpg" alt="Princess Bernas selfie">
+                    <p class="photo-caption">That's me!</p>
+                </div>
+                <div class="photo-item">
+                    <img src="be.jpg" alt="Princess watching">
+                    <p class="photo-caption">In my element — watching time</p>
+                </div>
+            </div>
+
+            <h2 class="hobbies-title">My Hobby: Watching</h2>
+
+            <div class="member-quote">
+                I like this because watching helps reduce stress. "Enjoyment" – this is where you feel happy while watching since you don't think too much (relaxing). What I learned here is: First of all, good memory – capturing the sweetest moments of your life. It also helps reduce anxiety or overthinking. And lastly, it shows that you value time for yourself.
+            </div>
+
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <h3>Stress Relief</h3>
+                    <p>Watching shows and movies is a wonderful way to reduce stress and just let go of the worries of the day.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Enjoyment & Happiness</h3>
+                    <p>There's a special kind of happiness that comes from watching — you don't overthink, you just relax and enjoy the moment.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Good Memories</h3>
+                    <p>Watching helps capture the sweetest moments in life. It creates memories that you can look back on and cherish.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Self-Care & Me Time</h3>
+                    <p>It helps reduce anxiety and overthinking. Most importantly, it shows that you value time for yourself.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Vibe<span>Check</span></div>
+                <p>&copy; 2026 VibeCheck. A school project created with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navLinks.classList.toggle('active'); });
+        document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { hamburger.classList.remove('active'); navLinks.classList.remove('active'); }); });
+    </script>
+</body>
+</html>

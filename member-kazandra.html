@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazandra Danah Payumo — VibeCheck</title>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        .profile-avatar { background: linear-gradient(135deg, #7c3aed, #a78bfa); }
+        .member-quote { border-left-color: #7c3aed; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Vibe<span>Check</span><span class="logo-dot"></span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#team">The Crew</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html#team" class="back-link">Back to Crew</a>
+        
+        <div class="member-profile">
+            <div class="profile-header">
+                <div class="profile-avatar">KP</div>
+                <h1 class="profile-name">Kazandra Danah Payumo</h1>
+                <p class="profile-intro">A manhwa enthusiast who finds peace and inspiration in every page</p>
+            </div>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="pa.jpg" alt="Kazandra Danah Payumo selfie">
+                    <p class="photo-caption">That's me!</p>
+                </div>
+                <div class="photo-item">
+                    <img src="payum.jpg" alt="Kazandra reading manhwa">
+                    <p class="photo-caption">Lost in a good manhwa</p>
+                </div>
+            </div>
+
+            <h2 class="hobbies-title">My Hobby: Reading Manhwa</h2>
+
+            <div class="member-quote">
+                I love reading manhwa because it helps me relax and get away from stress. The pictures and stories pulls me in right away. There are so many types too, like romance, fantasy, and more. So I get to learn about different ways of thinking and cultures.
+            </div>
+
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <h3>Stress Relief</h3>
+                    <p>Reading manhwa is the perfect way to relax and escape from the pressures of everyday life. It offers a calming break from reality.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Visual Storytelling</h3>
+                    <p>The beautiful artwork and illustrations pull you into the story right away, making the experience immersive and captivating.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Diverse Genres</h3>
+                    <p>From romance and fantasy to action and slice-of-life, there's always a new genre to explore and enjoy.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Cultural Learning</h3>
+                    <p>Through manhwa, you get to learn about different ways of thinking, traditions, and cultures from around the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Vibe<span>Check</span></div>
+                <p>&copy; 2026 VibeCheck. A school project created with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navLinks.classList.toggle('active'); });
+        document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { hamburger.classList.remove('active'); navLinks.classList.remove('active'); }); });
+    </script>
+</body>
+</html>

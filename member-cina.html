@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cina Batingal — VibeCheck</title>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        .profile-avatar { background: linear-gradient(135deg, #f59e0b, #fbbf24); }
+        .member-quote { border-left-color: #f59e0b; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Vibe<span>Check</span><span class="logo-dot"></span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#team">The Crew</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html#team" class="back-link">Back to Crew</a>
+        
+        <div class="member-profile">
+            <div class="profile-header">
+                <div class="profile-avatar">CB</div>
+                <h1 class="profile-name">Cina Batingal</h1>
+                <p class="profile-intro">A self-proclaimed food lover who believes calories don't count on weekends</p>
+            </div>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="eb.jpg" alt="Cina Batingal selfie">
+                    <p class="photo-caption">That's me!</p>
+                </div>
+                <div class="photo-item">
+                    <img src="e.jpg" alt="Cina eating">
+                    <p class="photo-caption">Doing what I do best</p>
+                </div>
+            </div>
+
+            <h2 class="hobbies-title">My Hobby: Food!</h2>
+
+            <div class="member-quote">
+                Hi, I'm a food lover. My hobbies include thinking about food, talking about food, cooking food, ordering food, and planning my next meal while eating my current one. I believe calories don't count on weekends, dessert always has space, and sharing food is a very complicated decision. If loving food is wrong, I don't want to be right.
+            </div>
+
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <h3>Thinking About Food</h3>
+                    <p>Every moment is an opportunity to plan the next delicious meal. Food is always on the mind — breakfast, lunch, dinner, and everything in between.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Cooking & Experimenting</h3>
+                    <p>There's nothing like the joy of cooking up something amazing. Trying new recipes and flavors is a never-ending adventure.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Ordering & Discovering</h3>
+                    <p>From street food to restaurants, every new dish is a discovery. The excitement of ordering something new is unmatched.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>The Dessert Philosophy</h3>
+                    <p>Dessert always has its own separate space. Calories don't count on weekends, and sharing food? That's a very complicated decision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Vibe<span>Check</span></div>
+                <p>&copy; 2026 VibeCheck. A school project created with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navLinks.classList.toggle('active'); });
+        document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { hamburger.classList.remove('active'); navLinks.classList.remove('active'); }); });
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Jumamoy — VibeCheck</title>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        .profile-avatar { background: linear-gradient(135deg, #3b82f6, #60a5fa); }
+        .member-quote { border-left-color: #3b82f6; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Vibe<span>Check</span><span class="logo-dot"></span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#team">The Crew</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="index.html#team" class="back-link">Back to Crew</a>
+        
+        <div class="member-profile">
+            <div class="profile-header">
+                <div class="profile-avatar">JJ</div>
+                <h1 class="profile-name">John Jumamoy</h1>
+                <p class="profile-intro">A guitarist at heart who dreams of making it to the big stage</p>
+            </div>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="jumamoy.jpg" alt="John Jumamoy selfie">
+                    <p class="photo-caption">That's me!</p>
+                </div>
+                <div class="photo-item">
+                    <img src="jumamoyg.jpg" alt="John playing the guitar">
+                    <p class="photo-caption">Playing my guitar</p>
+                </div>
+            </div>
+
+            <h2 class="hobbies-title">My Hobby: Playing Guitar</h2>
+
+            <div class="member-quote">
+                My hobbies are playing the guitar because this is what I do when I'm bored and it also makes me happy and I want to become a famous guitarist one day.
+            </div>
+
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <h3>Playing Guitar</h3>
+                    <p>The guitar is the go-to whenever boredom strikes. Strumming chords and learning new songs is a source of endless joy and fulfillment.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Happiness Through Music</h3>
+                    <p>Music has the power to lift spirits. Playing the guitar brings genuine happiness and a sense of accomplishment with every song mastered.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>The Big Dream</h3>
+                    <p>The ultimate goal is to become a famous guitarist one day. Every practice session is a step closer to making that dream come true.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Self-Expression</h3>
+                    <p>The guitar is more than an instrument — it's a way to express emotions, tell stories, and connect with people through music.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Vibe<span>Check</span></div>
+                <p>&copy; 2026 VibeCheck. A school project created with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navLinks.classList.toggle('active'); });
+        document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { hamburger.classList.remove('active'); navLinks.classList.remove('active'); }); });
+    </script>
+</body>
+</html>
